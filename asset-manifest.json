@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Letters-Calculator/static/css/main.14dd3a6e.chunk.css",
+    "main.js": "/Letters-Calculator/static/js/main.8f1ca13a.chunk.js",
+    "main.js.map": "/Letters-Calculator/static/js/main.8f1ca13a.chunk.js.map",
+    "runtime-main.js": "/Letters-Calculator/static/js/runtime-main.f3e61cf1.js",
+    "runtime-main.js.map": "/Letters-Calculator/static/js/runtime-main.f3e61cf1.js.map",
+    "static/js/2.7fe25799.chunk.js": "/Letters-Calculator/static/js/2.7fe25799.chunk.js",
+    "static/js/2.7fe25799.chunk.js.map": "/Letters-Calculator/static/js/2.7fe25799.chunk.js.map",
+    "index.html": "/Letters-Calculator/index.html",
+    "static/css/main.14dd3a6e.chunk.css.map": "/Letters-Calculator/static/css/main.14dd3a6e.chunk.css.map",
+    "static/js/2.7fe25799.chunk.js.LICENSE.txt": "/Letters-Calculator/static/js/2.7fe25799.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3e61cf1.js",
+    "static/js/2.7fe25799.chunk.js",
+    "static/css/main.14dd3a6e.chunk.css",
+    "static/js/main.8f1ca13a.chunk.js"
+  ]
+}
