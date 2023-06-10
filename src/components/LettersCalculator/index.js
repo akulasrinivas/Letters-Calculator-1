@@ -1,42 +1,46 @@
-import React from 'react'
+import {Component} from 'react'
+
 import './index.css'
 
-class LettersCalculator extends React.Component {
-  state = {count: 0}
+class LettersCalculator extends Component {
+  state = {
+    inputPhrase: '',
+  }
 
-  countCharacters = event => {
-    const word = event.target.value
-    this.setState({count: word.length})
-    console.log(event.target.value)
+  onChangeInputPhrase = event => {
+    const {value} = event.target
+    console.log(value)
+
+    this.setState({inputPhrase: value})
   }
 
   render() {
-    const {count} = this.state
+    const {inputPhrase} = this.state
+
     return (
-      <div>
-        <div className="container">
-          <div className="card">
-            <h1>Calculate the Letters you enter</h1>
-            <form onSubmit={this.handleSubmit}>
-              <label htmlFor="wordInput" className="inputText">
+      <div className="app-container">
+        <div className="letters-calculator-container">
+          <div className="calculator-container">
+            <h1 className="heading">Calculate the Letters you enter</h1>
+            <div className="input-phrase-container">
+              <label className="label" htmlFor="phraseText">
                 Enter the phrase
               </label>
-              <br />
               <input
-                id="wordInput"
-                onChange={this.countCharacters}
+                className="letters-input"
+                id="phraseText"
+                onChange={this.onChangeInputPhrase}
                 placeholder="Enter the phrase"
-                className="input"
                 type="text"
+                value={inputPhrase}
               />
-            </form>
-            <div className="lettersCard">
-              <p>No.of letters: {count}</p>
             </div>
+            <p className="letters-count">No.of letters: {inputPhrase.length}</p>
           </div>
           <img
-            src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
             alt="letters calculator"
+            className="letters-calculator-image"
+            src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
           />
         </div>
       </div>
